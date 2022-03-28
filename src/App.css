@@ -1,16 +1,12 @@
+:root{
+  --emerald: #10b981; 
+  --purple: #6b21a8;
+  --orange: #c2410c;
+}
+
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  font-family: 'Nunito', sans-serif;
 }
 
 .App-header {
@@ -24,15 +20,28 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+h1{
+  color: var(--emerald);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+table{
+  border-spacing: 0.3rem;
+}
+
+td, th{
+  border: 2px solid var(--purple);
+  padding: 0.7rem 1rem;
+  border-radius: 0.3rem;
+}
+
+th{
+  border:5px solid var(--purple);
+}
+
+input#file-input{
+  border: 3px solid var(--orange);
+  padding: 2rem 1rem;
+  border-radius: 1rem;
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
 }
